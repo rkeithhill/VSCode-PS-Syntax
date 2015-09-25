@@ -38,7 +38,7 @@ define(["require", "exports"], function (require, exports) {
         // we include these common regular expressions
         symbols: /[=><!~?&%|+\-*\/\^;\.,]+/,
         escapes: /`(?:[abfnrtv\\"'$]|x[0-9A-Fa-f]{1,4}|u[0-9A-Fa-f]{4}|U[0-9A-Fa-f]{8})/,
-        // Ideal varChars when JavaScript has Unicode support - /[_?\p{Lu}\p{Ll}\p{Lt}\p{Lm}\p{Lo}\p{Nd}]+/
+        // Ideal variableChars when JavaScript has Unicode support: /[_?\p{Lu}\p{Ll}\p{Lt}\p{Lm}\p{Lo}\p{Nd}]+/
         variableChars: /[?\w]+/,
         variableScope: /(global|local|private|script|using|workflow|@variableChars):/,
         bracedVariableChars: /([^`}]|`.)+/,
